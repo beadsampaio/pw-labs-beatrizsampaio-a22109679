@@ -6,6 +6,10 @@
         <meta name="author" content="Beatriz Sampaio">
         <meta name="description" content="Website sobre Ordino">
         <meta name="keywords" content="palavras chave">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
         <header>
@@ -17,29 +21,77 @@
         </header>
         <br>
         <nav>
-            <p>
-                <a href="index.html">Introdução</a>
-                <a href="local.html">Localização</a>
-                <a href="multimedia.html">Multimedia</a></b>
-                <a href="info.html">Informação</a>
+            <p id="menu">
+                <a href="index.html"><i class="fas fa-home"></i> Introdução</a>
+                <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
+                <a href="multimedia.html"><i class="fas fa-camera"></i> Multimedia</a></b>
+                <a href="info.html"><i class="fas fa-info-circle"></i>Informação</a>
+                <a href="html5-css.html" target="blank_"><i class="fab fa-html5"></i> HTML5 e <i class="fab fa-css3-alt"></i> CSS</a>
+                <a href="quizz.html"><i class="fas fa-question-circle"></i> Quizz</a>
             </p>
         </nav>
 
         <main>
             <section>
                 <h2>Multimedia</h2>
+                <div class="center">
+                    <a href="#video">Video</a>
+                    <a href="#fotografias">Fotografias</a>
+                    <a href="#poema">Poema</a>
+                </div>
+                
             </section>
 
             <section>
                 <figure>
+                    <h3 id="video">Video</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/28TpEJ9zerw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     <figcaption>Video sobre Ordino</figcaption>
                 </figure>
             </section>
+
+            <section>
+                <h3 id="fotografias">Fotografias</h3>
+                <p>Em baixo encontram 3 fotografias de Ordino, incluindo de pistas de ski.</p>
+                                
+                <a href="images/imagem_ordino_2_grande.jpg" target="foto">
+                    <img src="images/imagem_ordino_2_pequena.jpg" alt="imagem_ordino_2_pequena">
+                </a>  
+                <a href="images/imagem_ordino_grande.jpg" target="foto">
+                    <img src="images/imagem_ordino_pequena.jpg" alt="imagem_ordino_pequena">
+                </a>
+                <a href="images/ordino-arcalis_grande.jpg" target="foto">
+                    <img src="images/ordino-arcalis_pequena.jpg" alt="ordino-arcalis_pequena">
+                </a>
+                <iframe width="600px" height="400px" name="foto"></iframe>
+            </section>
+
+            <section>
+                <h3 id="poema">Poema</h3>
+                <h4>Balada da neve</h4>
+                <h5>Augusto Gil</h5>
+                <div class="poema">
+                    <p>
+                        <i>
+                        Quem bate, assim, levemente,<br>
+                        com tão estranha leveza,<br>
+                        que mal se ouve, mal se sente?<br>
+                        Não é chuva, nem é gente,<br>
+                        nem é vento com certeza.<br>
+                        <br>
+                        Fui ver. A neve caía<br>
+                        do azul cinzento do céu,<br>
+                        branca e leve, branca e fria...<br>
+                        - Há quanto tempo a não via!<br>
+                        E que saudades, Deus meu!<br>
+                        </i>
+                    </p>
+                </div>
+            </section>
         </main>
         
-        <footer>
-            <p>Beatriz Sampaio | a22109679 | Universidade Lusófona | 2023</p>
-        </footer>
+        
     </body>
+
+    <footer>Beatriz Sampaio / a22109679 / Universidade Lusófona de Humanidades e Tecnologias / 2023</footer>
 </html>

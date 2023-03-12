@@ -6,34 +6,149 @@
         <meta name="author" content="Beatriz Sampaio">
         <meta name="description" content="Website sobre Ordino">
         <meta name="keywords" content="palavras chave">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
+
+        <header>
+            <h1>Ordino</h1>
+            <figure>
+                <img src="images/ordino.jpg" alt="Ordino">
+                <figcaption>Imagem Ordino, Andorra</figcaption>
+            </figure>
+        </header>
+        <br>
+        <nav>
+            <p id="menu">
+                <a href="index.html"><i class="fas fa-home"></i> Introdução</a>
+                <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
+                <a href="multimedia.html"><i class="fas fa-camera"></i> Multimedia</a>
+                <a href="info.html"><i class="fas fa-info-circle"></i>Informação</a>
+                <a href="html5-css.html" target="blank_"><i class="fab fa-html5"></i> HTML5 e <i class="fab fa-css3-alt"></i> CSS</a>
+                <a href="quizz.html"><i class="fas fa-question-circle"></i> Quizz</a></b>
+            </p>
+        </nav>
+
         
         <h3>Quizz</h3>
         <p>Agora vamos fazer um quizz sobre Ordino, Andorra, ficaras a saber com bem conheces esta linda cidade</p>
         
-        <form>
-            <fieldset>
+        <form method="POST" action="mailto: beatrizdsampaio@gmail.com" enctype="multipart/form-data">
+            <fieldset class="fieldset-grande">
               <legend>Quizz sobre Ordino</legend>
-            </fieldset>
-
-            <fieldset>
+            
+            <fieldset class="fieldset-1">
                 <legend>info</legend>
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome"><br><br>
+                <input type="text" class="input-bloco" id="nome" placeholder="Nome" autofocus pattern="[A-Za-zÀ-ú]+">
                 <label for="apelido">Apelido:</label>
-                <input type="text" id="apelido" name="apelido"><br><br>
+                <input type="text" class="input-bloco" id="apelido" placeholder="Apelido" pattern="[A-Za-zÀ-ú]+">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
+                <input type="email" class="input-bloco" id="email" placeholder="Email" autocomplete="off" multiple>
             </fieldset>
 
-            
+            <fieldset class="fieldset-2">
+                <legend>perguntas</legend>
+                <ol>
+                    <li>
+                        <label>Quantos quilómetros de pista tem Ordino?</label>
+                        <ul>
+                            <li><input type="radio" name="quilometros_pista" value="a">
+                                <label for="a">20</label>
+                            </li>
+                            <li><input type="radio" name="quilometros_pista" value="b">
+                                <label for="b">25</label>
+                            </li>
+                            <li><input type="radio" name="quilometros_pista" value="c">
+                                <label for="c">30</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label>Onde fica localizado Ordino?</label>
+                        <input type="text" class="input-bloco" name="localização" maxlength="20" required>
+                    </li>
+                    <li>
+                        <label>Qual destas igrejas não pertence a Ordino?</label>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="igrejas" value="a">Igreja de Sant Marti de la Cortinada
+                            </li>
+                            <li>
+                                <input type="checkbox" name="igrejas" value="b">Igreja de Sant Corneli e Sant Cebrià
+                            </li>
+                            <li>
+                                <input type="checkbox" name="igrejas" value="c">Igreja de Sant Joan de Caselles
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label>Qual a data em que foi fundada Andorra?(dd/mm/aa)</label>
+                        <input type="date" class="input-bloco" name="data_fundacao" >
+                    </li>
+                    <li>
+                        <label>Qual é o nome da igreja que está na imagem</label>
+                        <input list="igreja" class="input-bloco">
+                        <datalist id="igreja">
+                            <option value="Igreja de Sant Marti de la Cortinada">
+                            <option value="Igreja de Sant Corneli e Sant Cebrià">
+                            <option value="Igreja de Sant Joan de Caselle">
+                        </datalist> 
+                        <img src="images/Ordino01.jpg" alt="Igreja" width="300" height="150">
+                        
+                        
+                    </li>
+                    <li>
+                        <label>Quais as 3 cores da bandeira de Andorra</label>
+                        <label> <input type="color" class="input-bloco" name="cor1_bandeira"></label>
+                        <label> <input type="color" class="input-bloco" name="cor2_bandeira"></label>
+                        <label> <input type="color" class="input-bloco" name="cor3_bandeira"></label>
+                    </li>
+                    <li>
+                        <label for="altitude">A paróquia de Ordino situa-se a quantos metros de altitude(1-1500):</label>
 
-            <fieldset>
+                        <input type="number" class="input-bloco" id="altitude" name="altitude"
+                        min="1" max="1500" size="4">
+                    </li>
+                    <li>
+                        <label for="probabilidade">Numa escala de 0 a 10, classifica a probabilidade de visitares Ordino</label>
+
+                        <input type="range" class="input-bloco" id="probabilidade" name="probabilidade"
+                        min="0" max="10">
+                    </li>
+                    <li>
+                        <label for="continente_select">Em que continente fica Ordino, Andorra?</label>
+                        <select name="continente" id="continente_select">
+                            <option value="">--Please choose an option--</option>
+                            <option value="america">América</option>
+                            <option value="africa">África</option>
+                            <option value="europa">Europa</option>
+                            <option value="asia">Ásia</option>
+                            <option value="oceania">Oceania</option>
+                            <option value="antartida">Antártida</option>
+                        </select>
+                    </li>
+                </ol>
+                
+            </fieldset>
+
+            <fieldset class="fieldset-3">
+                <label for="comentario">Deixe o seu comentário:</label>
+
+                <textarea id="comentario" name="comentario" rows="5" cols="33">
+
+                </textarea>
+            </fieldset>
+
+            <fieldset class="fieldset-4">
                 <input type="submit" value="Submit">
             </fieldset>
 
-          </form>
+            </fieldset>
+        </form>
 
     </body>
 </html>

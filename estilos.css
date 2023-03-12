@@ -1,0 +1,110 @@
+* {
+    background-color: antiquewhite;
+    font-family: 'Playfair Display', serif;
+}
+
+
+h1 , h2 , h3 , h4 , h5{
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.input-bloco {
+  display: block;
+}
+
+body {
+    margin: auto;
+    width: 640px; 
+    padding: 50px;
+    color: #2E475D;    
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.fieldset-grande {
+    background-color: azure;
+}
+
+.fieldset-1 {
+    background-color: bisque;
+}
+
+.fieldset-2 {
+    background-color: blanchedalmond;
+}
+
+.fieldset-3 {
+    background-color:violet;
+}
+
+.fieldset-4 {
+    background-color:blueviolet;
+}
+
+#menu {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #e06767;
+}
+  
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: pink;
+}
+
+a:hover::before {
+    content: " -> ";
+}
+a:hover::after{
+    content: " <- ";;
+}
+
+div.poema::first-line {
+    font-style: italic;
+}
+
+.poema {
+    text-align: center;
+}
+
+div.poema::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+  
+img[src$=".jpg"], iframe {
+    border: 3px solid black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1cm;
+}
+
+
+

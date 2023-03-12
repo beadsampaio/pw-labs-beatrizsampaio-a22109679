@@ -6,6 +6,10 @@
         <meta name="author" content="Beatriz Sampaio">
         <meta name="description" content="Website sobre Ordino">
         <meta name="keywords" content="palavras chave">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
         <header>
@@ -18,11 +22,13 @@
         </header>
         <br>
         <nav>
-            <p>
-                <a href="index.html">Introdução</a>
-                <a href="local.html">Localização</a>
-                <a href="multimedia.html">Multimedia</a>
-                <a href="info.html">Informação</a></b>
+            <p id="menu">
+                <a href="index.html"><i class="fas fa-home"></i> Introdução</a>
+                <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
+                <a href="multimedia.html"><i class="fas fa-camera"></i> Multimedia</a>
+                <a href="info.html"><i class="fas fa-info-circle"></i>Informação</a></b>
+                <a href="html5-css.html" target="blank_"><i class="fab fa-html5"></i> HTML5 e <i class="fab fa-css3-alt"></i> CSS</a>
+                <a href="quizz.html"><i class="fas fa-question-circle"></i> Quizz</a>
             </p>
         </nav>
 
@@ -34,40 +40,45 @@
             <section>
                 <table>
                     <tr>
-                        <td>País:</td>
-                        <td>Andorra</td>
+                        <td> País: </td>
+                        <td colspan="2"> Andorra </td>
                     </tr>
                     <tr>
-                        <td>Paróquia:</td>
-                        <td>Ordino</td>
+                        <td> Paróquia: </td>
+                        <td colspan="2"> Ordino </td>
                     </tr>
                     <tr>
-                        <td>População:</td>
-                        <td>3.947 habitantes</td>
+                        <td> População: </td>
+                        <td colspan="2">3.947 habitantes</td>
                     </tr>
                     <tr>
-                        <td>Coordenadas Geográficas:</td>
-                        <td>Latitude: 42.5555, Longitude: 1.5333
-                            42° 33′ 20″ Norte, 1° 31′ 60″ Este</td>
+                        <td rowspan="2"> Coordenadas Geográficas: </td>
+                        <td> Latitude: 42.5555 </td>
+                        <td> 42° 33′ 20″ Norte </td>
                     </tr>
                     <tr>
-                        <td>Superfície:</td>
-                        <td>8.930 hectares</td>
+                        <td> Longitude: 1.5333 </td>
+                        <td> 1° 31′ 60″ Este </td>
                     </tr>
                     <tr>
-                        <td>Altitude:</td>
-                        <td>1.298 m</td>
+                        <td> Superfície: </td>
+                        <td colspan="2"> 8.930 hectares </td>
                     </tr>
                     <tr>
-                        <td>Clima:</td>
-                        <td>Clima oceânico</td>
+                        <td> Altitude: </td>
+                        <td colspan="2"> 1.298 m </td>
+                    </tr>
+                    <tr>
+                        <td> Clima: </td>
+                        <td colspan="2"> Clima oceânico </td>
                     </tr>
                 </table>
             </section>
         </main>
         
-        <footer>
-            <p>Beatriz Sampaio | a22109679 | Universidade Lusófona | 2023</p>
-        </footer>
+    
     </body>
+
+    <footer>Beatriz Sampaio / a22109679 / Universidade Lusófona de Humanidades e Tecnologias / 2023</footer>
+
 </html>
