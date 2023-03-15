@@ -1,10 +1,12 @@
 * {
-    background-color: antiquewhite;
     font-family: 'Playfair Display', serif;
 }
 
-
-h1 , h2 , h3 , h4 , h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     text-align: center;
 }
 
@@ -13,17 +15,20 @@ h1 , h2 , h3 , h4 , h5{
 }
 
 .input-bloco {
-  display: block;
+    display: block;
 }
 
 body {
+    background-color: antiquewhite;
     margin: auto;
-    width: 640px; 
+    width: 640px;
     padding: 50px;
-    color: #2E475D;    
+    color: #2E475D;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -41,11 +46,11 @@ table, th, td {
 }
 
 .fieldset-3 {
-    background-color:violet;
+    background-color: violet;
 }
 
 .fieldset-4 {
-    background-color:blueviolet;
+    background-color: blueviolet;
 }
 
 #menu {
@@ -55,7 +60,7 @@ table, th, td {
 tr:nth-child(even) {
     background-color: #e06767;
 }
-  
+
 tr:nth-child(odd) {
     background-color: #fff;
 }
@@ -79,8 +84,9 @@ a:active {
 a:hover::before {
     content: " -> ";
 }
-a:hover::after{
-    content: " <- ";;
+
+a:hover::after {
+    content: " <- ";
 }
 
 div.poema::first-line {
@@ -96,8 +102,9 @@ div.poema::first-letter {
     font-weight: bold;
 }
 
-  
-img[src$=".jpg"], iframe {
+
+img[src$=".jpg"],
+iframe {
     border: 3px solid black;
 }
 
@@ -105,6 +112,3 @@ footer {
     text-align: center;
     margin-top: 1cm;
 }
-
-
-
