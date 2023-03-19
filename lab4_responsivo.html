@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>Ordino</title>
+        <meta name="author" content="Beatriz Sampaio">
+        <meta name="description" content="Website sobre Ordino">
+        <meta name="keywords" content="palavras chave">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="lab4_parallax.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    </head>
+    <body>
+
+        <nav>
+            <div class="dropdown">
+                <button class="lab2">Lab 2 <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="index.html"><i class="fas fa-home"></i> Introdução</a></b>
+                    <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
+                    <a href="multimedia.html"><i class="fas fa-camera"></i> Multimedia</a>
+                    <a href="info.html"><i class="fas fa-info-circle"></i>Informação</a>
+                    <a href="html5-css.html" target="blank_"><i class="fab fa-html5"></i> HTML5 e <i class="fab fa-css3-alt"></i> CSS</a>
+                    <a href="quizz.html"><i class="fas fa-question-circle"></i> Quizz</a>
+                </div>
+                
+            </div>
+            <div class="dropdown">
+                <button class="lab3">Lab 3 <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="lab3.html">Lab 3</a>
+                    <a href="lab3_capitais.html">Capitais</a>
+                </div>
+                
+            </div>
+            <div class="dropdown">
+                <button class="lab4">Lab 4 <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="lab4.html">Lab 4</a>
+                    <a href="lab4_parallax.html">Efeito Parallax</a>
+                    <a href="lab4_responsivo.html">Imagem Resposiva</a></b>
+                    <a href="lab4_video.html">Video background</a>
+                </div>
+            </div>
+
+        </nav>
+<br>
+        <h1>Imagem Responsiva</h1>
+        <br>
+        <p>Nesta página vais ver o efeito de iamagem responsiva</p>
+        <br>
+
+        <picture>
+            <source srcset="imagem_ordino_grande"
+            media="(max-width: 600px)">
+            <source srcset="imagem_ordino_2_grande.jpg"
+            media="(max-width: 1500px)">
+            <source srcset="ordino-arcalis_grande.jpg">
+            <img src="images/imagem_ordino_grande.jpg" alt="ordino">
+        </picture>
+        
+
+
+  
+        
+    </body>
+
+    <footer></footer>
+</html>
