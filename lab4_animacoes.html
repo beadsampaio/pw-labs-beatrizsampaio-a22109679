@@ -57,34 +57,62 @@
 
         </nav>
 
-        <div class="video-background">
-            <div class="video-foreground">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/28TpEJ9zerw"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-        </div>
+    
 
-
-        <!-- Optional: some overlay text to describe the video -->
-        <div class="content">
-            <h1>Video background</h1>
-            <p>Video do YouTube, sobre Ordino</p>
-            <!-- Use a button to pause/play the video with JavaScript -->
-            <button id="myBtn" onclick="myFunction()">Pause</button>
-        </div>
+    
     </header>
 
+    <svg id="animacoes" width="200" height="200">
+        <rect x="50" y="50" width="100" height="100" fill="#ECA400">
+        <animate attributeName="width" from="100" to="50" dur="1s" repeatCount="indefinite" />
+        <animate attributeName="height" from="100" to="50" dur="1s" repeatCount="indefinite" />
+        </rect>
+        <circle cx="100" cy="100" r="50" fill="#57C4FF">
+        <animate attributeName="cx" from="50" to="150" dur="1s" repeatCount="indefinite" />
+        </circle>
+        <polygon points="50,150 100,100 150,150" fill="#8BC34A">
+        <animate attributeName="points" from="50,150 100,100 150,150" to="75,125 100,75 125,125" dur="1s" repeatCount="indefinite" />
+        </polygon>
+    </svg>
 
 
+    <img src="images/ordino-arcalis_grande.jpg" class="animacao" alt="">
+    <img src="images/ordino.jpg" class="animacao" alt="">
+    <br>
 
+    <div id="quadrado"></div>
+    <br>
 
+    <img src="images/imagem_ordino_pequena.jpg" class="keyframe-ordino" alt="">
 
+    <br>
 
+    <h1>Mar poruguês</h1>
 
+    <div class="poema">
+        <div>
+          <p>Ó mar salgado, quanto do teu sal</p>
+          <p>São lágrimas de Portugal!</p>
+          <p>Por te cruzarmos, quantas mães choraram,</p>
+          <p>Quantos filhos em vão rezaram!</p>
+          <p>Quantas noivas ficaram por casar</p>
+          <p>Para que fosses nosso, ó mar!</p>
+        </div>
+        <div>
+            <p>Valeu a pena? Tudo vale a pena</p>
+            <p>Se a alma não é pequena.</p>
+            <p>Quem quer passar além do Bojador</p>
+            <p>Tem que passar além da dor.</p>
+            <p>Deus ao mar o perigo e o abismo deu,</p>
+            <p>Mas nele é que espelhou o céu.</p>
+        </div>
+    </div>
+
+    <h2>Fernando Pessoa</h2>
+
+    <br>
 </body>
 
-<footer></footer>
+
 
 </html>

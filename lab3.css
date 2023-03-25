@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body {
+    background-color: beige;
+}
+
 #menu {
     text-align: center;
 }
@@ -32,3 +36,140 @@ a:hover::before {
 a:hover::after {
     content: " <- ";
 }
+
+.primeiro_div {
+    width: 100vw;
+    height: 50vh;
+    background-color:floralwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.principal {
+    position: relative;
+
+}
+
+.principal img {
+    width: 100%;
+}
+
+.principal p {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: aliceblue;
+}
+
+.capitais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: floralwhite;
+    padding: 50px;
+}
+
+.capitais > div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    margin: 10px;
+}
+
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child {
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.figuras {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    padding: 50px;
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.quadrado:hover {
+    visibility: hidden;
+}
+
+
+.image {
+    position: relative;
+    clip: rect(0px, 60px, 200px, 0px);
+    z-index: 1;
+}
+
+header {
+    height: 10vh; 
+    background-color:bisque;
+    color: palevioletred;
+    top: 0;  
+    
+    /* alinhando logo e menu */
+    display:flex;
+    justify-content: space-between;  
+    align-items: center;
+
+}
+
+ a {
+    padding: 20px;
+    text-decoration: none;
+    text-decoration-color: palevioletred;
+ }
+
+ #ancora:hover {
+    background-color: gray;
+    font-weight: bold;
+ }
+
+ #lisboa, #paris, #praga, #budapeste {
+    text-align: center;
+ }
+
+ .img_city {
+    height: 200px;
+ }
+
+ p {
+    text-align: center;
+    size: 2cm;
+ }
